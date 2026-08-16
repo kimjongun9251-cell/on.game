@@ -1844,9 +1844,7 @@ sktop/tablet: match Figma look (3 cards visible, centered) */
   font-weight: 600;
 }
 
-.jp-navbar.fixed-top {
-  top: 38px;
-}
+
 
 /* Trust badges (replaces payment icons) */
 .jp-trust-badges {
