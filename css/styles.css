@@ -357,7 +357,7 @@ header .btn-cta-gold:hover {
 .hero-section {
   position: relative;
   overflow: visible;
-  margin-top: 128px;
+  margin-top: 166px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -1823,5 +1823,285 @@ sktop/tablet: match Figma look (3 cards visible, centered) */
   }
 }
 
+/* Meta compliance — disclaimer bar */
+.jp-meta-disclaimer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  background: rgba(15, 23, 42, 0.98);
+  color: var(--text-color);
+  text-align: center;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.45;
+  border-bottom: 1px solid var(--jp-border);
+}
 
+.jp-meta-disclaimer strong {
+  color: var(--jp-cyan);
+  font-weight: 600;
+}
+
+.jp-navbar.fixed-top {
+  top: 38px;
+}
+
+/* Trust badges (replaces payment icons) */
+.jp-trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 48px 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.jp-trust-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex: 1 1 140px;
+  max-width: 180px;
+  min-height: 90px;
+  padding: 1rem;
+  background: var(--jp-card);
+  border: 1px solid var(--jp-border);
+  border-radius: 16px;
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jp-trust-badge i {
+  font-size: 1.5rem;
+  color: var(--jp-cyan);
+}
+
+.jp-trust-badge:hover {
+  border-color: var(--jp-border-strong);
+  box-shadow: var(--jp-glow-cyan);
+}
+
+/* About section */
+.jp-about-section {
+  padding: 56px 0;
+}
+
+.jp-about-panel {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  background: var(--jp-card);
+  border: 1px solid var(--jp-border);
+  border-radius: 20px;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+.jp-about-panel a {
+  color: var(--jp-cyan);
+  text-decoration: none;
+}
+
+.jp-about-panel a:hover {
+  text-decoration: underline;
+}
+
+/* Reviews disclaimer */
+.jp-reviews-note {
+  color: var(--jp-muted);
+  font-style: italic;
+}
+
+/* Footer compliance extras */
+.jp-footer-contact {
+  margin-top: 1.5rem;
+  color: var(--text-color);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.jp-footer-contact a {
+  color: var(--jp-cyan);
+  text-decoration: none;
+}
+
+.jp-footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.jp-footer-trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(34, 211, 238, 0.1);
+  border: 1px solid var(--jp-border-strong);
+  border-radius: 999px;
+  color: var(--jp-cyan);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.jp-footer-trust-badge i {
+  font-size: 1.125rem;
+}
+
+.jp-footer-legal-note {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--jp-border);
+  border-radius: 12px;
+  color: var(--jp-muted);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+/* Legal & contact pages */
+.jp-legal-page {
+  margin-top: 140px;
+  padding: 48px 0 64px;
+  min-height: 60vh;
+}
+
+.jp-legal-title {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.jp-legal-updated {
+  color: var(--jp-muted);
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+}
+
+.jp-legal-content {
+  max-width: 760px;
+  color: var(--text-color);
+  line-height: 1.75;
+}
+
+.jp-legal-content h2 {
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.jp-legal-content ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.jp-legal-content li {
+  margin-bottom: 0.5rem;
+}
+
+.jp-legal-content a {
+  color: var(--jp-cyan);
+  text-decoration: none;
+}
+
+.jp-legal-content a:hover {
+  text-decoration: underline;
+}
+
+.jp-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.jp-contact-card {
+  padding: 1.75rem;
+  background: var(--jp-card);
+  border: 1px solid var(--jp-border);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.jp-contact-card h2 {
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0.75rem 0;
+}
+
+.jp-contact-card p {
+  color: var(--text-color);
+  font-size: 0.9375rem;
+  margin-bottom: 1rem;
+}
+
+.jp-contact-icon {
+  font-size: 2rem;
+  color: var(--jp-cyan);
+}
+
+.jp-contact-link {
+  color: var(--jp-cyan);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.jp-contact-link:hover {
+  text-decoration: underline;
+}
+
+.jp-contact-detail {
+  margin-top: 0.75rem;
+  color: var(--jp-muted);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 767.98px) {
+  .jp-meta-disclaimer {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .jp-navbar.fixed-top {
+    top: 34px;
+  }
+
+  .hero-section {
+    margin-top: 118px;
+  }
+
+  .jp-legal-page {
+    margin-top: 120px;
+    padding: 32px 0 48px;
+  }
+
+  .jp-trust-badges {
+    gap: 0.75rem;
+    padding: 32px 0;
+  }
+
+  .jp-trust-badge {
+    flex: 1 1 calc(50% - 0.75rem);
+    max-width: none;
+    min-height: 80px;
+    font-size: 0.8125rem;
+  }
+
+  .jp-footer-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
 
