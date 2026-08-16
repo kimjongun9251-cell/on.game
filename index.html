@@ -1,3 +1,17 @@
+<!--
+  CUSTOM DOMAIN SETUP (GitHub Pages → playongame.com)
+  ───────────────────────────────────────────────────
+  1. Buy domain (e.g. playongame.com) from any registrar.
+  2. In GitHub repo: Settings → Pages → Custom domain → enter playongame.com → Save.
+  3. At your registrar DNS, add:
+       Type: A     Host: @   Value: 185.199.108.153
+       Type: A     Host: @   Value: 185.199.109.153
+       Type: A     Host: @   Value: 185.199.110.153
+       Type: A     Host: @   Value: 185.199.111.153
+       Type: CNAME Host: www Value: kimjongun9251-cell.github.io
+  4. Enable "Enforce HTTPS" in GitHub Pages settings.
+  5. In Meta Business Manager, verify domain and use the custom URL in all ads.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,15 +19,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Terms of Service for ON.GAME — free social gaming hub for entertainment only." />
+    content="ON.GAME — 100% free social gaming hub. Play arcade, sports and multiplayer games online. No real money, no betting. Entertainment only." />
   <meta name="robots" content="index, follow" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Terms of Service — ON.GAME" />
+  <meta property="og:title" content="ON.GAME — Free Social Gaming Hub" />
+  <meta property="og:description"
+    content="100% free social games for entertainment. No deposits, no cash prizes, no betting." />
+  <meta property="og:url" content="https://kimjongun9251-cell.github.io/on.game/" />
   <meta property="og:site_name" content="ON.GAME" />
   <meta name="theme-color" content="#070b14" />
-  <title>Terms of Service — ON.GAME</title>
+  <title>ON.GAME — Free Social Gaming Hub</title>
 
   <link rel="icon" href="assets/favicon/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="style.css" />
@@ -56,89 +74,341 @@
         <a class="navbar-brand navbar-brand-logo" href="index.html" aria-label="ON.GAME Home">
           <img class="brand-logo-img" src="assets/logo.png" alt="ON.GAME" width="297" height="40" decoding="async" />
         </a>
-        <button type="button" class="jp-btn btn-cta-gold js-lead-cta" data-cta-location="header">
-          Get App Link
-        </button>
+        <a class="jp-btn btn-cta-gold" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">Get App Link</a>
       </div>
     </nav>
   </header>
 
-  <main id="main-content" class="jp-legal-page">
-    <div class="container">
-      <div class="hero-disclaimer" role="note">
-        <i class="bi bi-shield-check" aria-hidden="true"></i>
-        <p>
-          <strong>100% Free Social Gaming Platform.</strong>
-          No real money deposit, betting, or cash prizes involved.
-          For entertainment purposes only (18+).
-        </p>
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-disclaimer" role="note">
+          <i class="bi bi-shield-check" aria-hidden="true"></i>
+          <p>
+            <strong>100% Free Social Gaming Platform.</strong>
+            No real money deposit, betting, or cash prizes involved.
+            For entertainment purposes only (18+).
+          </p>
+        </div>
+
+        <div class="jp-hero-inner">
+          <div class="hero-banner-wrap">
+            <div class="hero-banner-media">
+              <picture>
+                <source media="(max-width: 768px)" srcset="assets/mobile/hero-banner.png" />
+                <img class="hero-bg-img" src="assets/herobanner.jpg" alt="" width="1920" height="1080"
+                  decoding="async" fetchpriority="high" />
+              </picture>
+            </div>
+            <div class="hero-bg-overlay" aria-hidden="true"></div>
+            <div class="hero-content">
+              <div class="hero-copy">
+                <h1 id="hero-title" class="hero-title">FREE SOCIAL<br>GAMING HUB</h1>
+                <p class="hero-subtitle">
+                  Arcade, sports &amp; multiplayer games — play instantly in your browser.
+                  <span class="d-block">Free to play • No download required to preview</span>
+                </p>
+                <a class="jp-btn btn-cta-purple" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">Get App Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <h1 class="jp-legal-title">Terms of Service</h1>
-      <p class="jp-legal-updated">Last updated: August 16, 2026</p>
+    <!-- How it works -->
+    <section class="how-to-claim-section" aria-labelledby="how-title">
+      <div class="container">
+        <h2 id="how-title" class="section-title-gold text-center">
+          <span class="section-title-chip">How it works</span>
+        </h2>
+        <div class="howto-panel">
+          <ol class="howto-steps">
+            <li class="howto-step">
+              <span class="howto-step-num" aria-hidden="true">1</span>
+              <div>
+                <h3 class="howto-step-title">Browse games</h3>
+                <p class="howto-step-desc">Explore sports, arcade and multiplayer titles below.</p>
+              </div>
+            </li>
+            <li class="howto-step">
+              <span class="howto-step-num" aria-hidden="true">2</span>
+              <div>
+                <h3 class="howto-step-title">Tap Get App Link</h3>
+                <p class="howto-step-desc">Message us on WhatsApp and get the mobile app in seconds.</p>
+              </div>
+            </li>
+            <li class="howto-step">
+              <span class="howto-step-num" aria-hidden="true">3</span>
+              <div>
+                <h3 class="howto-step-title">Play &amp; enjoy</h3>
+                <p class="howto-step-desc">Install the app and enjoy free arcade, sports and multiplayer games.</p>
+              </div>
+            </li>
+          </ol>
+          <div class="text-center mt-4">
+            <a class="jp-btn btn-cta-gold px-4" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">Get App Link</a>
+          </div>
+        </div>
 
-      <div class="jp-legal-content">
-        <p>Welcome to ON.GAME. By accessing or using our website, browser game previews, or mobile app services, you agree to these Terms of Service ("Terms"). Please read them carefully.</p>
-
-        <h2>1. About ON.GAME</h2>
-        <p>ON.GAME is a <strong>free social gaming hub</strong> offering arcade, sports-themed, and multiplayer games for casual entertainment. ON.GAME is <strong>not</strong> a real-money gambling, sports betting, casino, or lottery service.</p>
-
-        <h2>2. No Real-Money Gambling</h2>
-        <p>You acknowledge and agree that:</p>
-        <ul>
-          <li>ON.GAME does not accept deposits, wagers, or bets involving real money</li>
-          <li>Virtual coins, points, badges, and in-game rewards have <strong>no cash value</strong> and cannot be exchanged for money or prizes</li>
-          <li>There are no cash withdrawals, UPI payouts, or financial winnings on this platform</li>
-          <li>Browser game previews and all gameplay are provided for entertainment purposes only</li>
-        </ul>
-
-        <h2>3. Eligibility</h2>
-        <p>You must be at least 18 years old and legally permitted to use online gaming services in your jurisdiction. By using ON.GAME, you represent that you meet applicable age and legal requirements. We may restrict access where required by law.</p>
-
-        <h2>4. App Download Requests</h2>
-        <p>When you submit your mobile number through our app request form, you consent to receive the download link via WhatsApp. Messaging is voluntary. Standard carrier data charges may apply. We use your number only to fulfill your request.</p>
-
-        <h2>5. Browser Game Previews</h2>
-        <p>Free demo games on this website are simplified previews for entertainment. They do not represent real-money outcomes, odds, or payouts. Full game libraries are available in the mobile app only.</p>
-
-        <h2>6. Acceptable Use</h2>
-        <p>You agree not to:</p>
-        <ul>
-          <li>Use the platform for unlawful, fraudulent, or abusive purposes</li>
-          <li>Attempt to hack, reverse engineer, or disrupt our services</li>
-          <li>Misrepresent ON.GAME as a betting or real-money gambling service</li>
-          <li>Use bots, cheats, or exploits that harm other players or the platform</li>
-        </ul>
-
-        <h2>7. Intellectual Property</h2>
-        <p>All content on this website — including logos, text, graphics, and game artwork — is owned by ON.GAME or its licensors and protected by applicable intellectual property laws.</p>
-
-        <h2>8. Disclaimers</h2>
-        <p>ON.GAME is provided on an "as is" and "as available" basis. We do not guarantee uninterrupted access, error-free operation, or specific game outcomes. To the fullest extent permitted by law, we disclaim all warranties, express or implied.</p>
-
-        <h2>9. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law, ON.GAME and its operators shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the website or games.</p>
-
-        <h2>10. Third-Party Links</h2>
-        <p>Our website may integrate with third-party services such as WhatsApp, Meta Pixel, and Google Analytics. We are not responsible for third-party policies or practices.</p>
-
-        <h2>11. Changes to Terms</h2>
-        <p>We may update these Terms at any time. Updated Terms will be posted on this page with a revised date.</p>
-
-        <h2>12. Governing Law</h2>
-        <p>These Terms are governed by the laws of India. Disputes shall be subject to the exclusive jurisdiction of courts in India, unless otherwise required by applicable law.</p>
-
-        <h2>13. Contact</h2>
-        <p>For questions about these Terms:</p>
-        <ul>
-          <li>Email: <a href="mailto:support@ongame.app">support@ongame.app</a></li>
-          <li>Contact page: <a href="contact.html">contact.html</a></li>
-        </ul>
+        <div class="jp-trust-badges" aria-label="Platform highlights">
+          <div class="jp-trust-badge"><i class="bi bi-controller" aria-hidden="true"></i><span>Free to Play</span></div>
+          <div class="jp-trust-badge"><i class="bi bi-shield-check" aria-hidden="true"></i><span>No Real Money</span></div>
+          <div class="jp-trust-badge"><i class="bi bi-people" aria-hidden="true"></i><span>Social Gaming</span></div>
+          <div class="jp-trust-badge"><i class="bi bi-phone" aria-hidden="true"></i><span>App via WhatsApp</span></div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Why ON.GAME -->
+    <section class="why-main-section" aria-labelledby="why-title">
+      <div class="container">
+        <h2 id="why-title" class="section-title-gold text-center">
+          <span class="section-title-chip">Why ON.GAME?</span>
+        </h2>
+        <div class="why-grid">
+          <article class="why-card">
+            <i class="bi bi-person-check why-card-icon" aria-hidden="true"></i>
+            <p class="why-card-label">Easy Sign-up</p>
+          </article>
+          <article class="why-card">
+            <i class="bi bi-lightning-charge why-card-icon" aria-hidden="true"></i>
+            <p class="why-card-label">Smooth Gameplay</p>
+          </article>
+          <article class="why-card">
+            <i class="bi bi-gift why-card-icon" aria-hidden="true"></i>
+            <p class="why-card-label">Daily Rewards</p>
+          </article>
+          <article class="why-card">
+            <i class="bi bi-trophy why-card-icon" aria-hidden="true"></i>
+            <p class="why-card-label">Leaderboards</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sports Games -->
+    <section class="jp-slider-section" id="sports-games" aria-labelledby="sports-title">
+      <div class="container">
+        <div class="jp-slider-section-title-row">
+          <i class="bi bi-trophy-fill section-icon" aria-hidden="true"></i>
+          <h2 id="sports-title" class="jp-slider-section-title">Sports Games</h2>
+        </div>
+        <div class="jp-slider-container" data-slider>
+          <button class="jp-slider-btn jp-slider-prev" type="button" aria-label="Previous games"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+          <div class="jp-slider-viewport">
+            <div class="jp-slider-track">
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--sports"><i class="bi bi-dribbble" aria-hidden="true"></i></div>
+                <span class="game-card__title">Cricket Champion 3D</span>
+                <span class="game-card__tag">Sports</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--sports"><i class="bi bi-bullseye" aria-hidden="true"></i></div>
+                <span class="game-card__title">Street Striker</span>
+                <span class="game-card__tag">Sports</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--sports"><i class="bi bi-award" aria-hidden="true"></i></div>
+                <span class="game-card__title">Super League Cricket</span>
+                <span class="game-card__tag">Sports</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--sports"><i class="bi bi-speedometer2" aria-hidden="true"></i></div>
+                <span class="game-card__title">Fast Bowler Pro</span>
+                <span class="game-card__tag">Sports</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--sports"><i class="bi bi-flag" aria-hidden="true"></i></div>
+                <span class="game-card__title">T20 Arena</span>
+                <span class="game-card__tag">Sports</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--sports"><i class="bi bi-star" aria-hidden="true"></i></div>
+                <span class="game-card__title">Hundred Heroes</span>
+                <span class="game-card__tag">Sports</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+            </div>
+          </div>
+          <button class="jp-slider-btn jp-slider-next" type="button" aria-label="Next games"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multiplayer Games -->
+    <section class="jp-slider-section" id="multiplayer-games" aria-labelledby="multi-title">
+      <div class="container">
+        <div class="jp-slider-section-title-row">
+          <i class="bi bi-people-fill section-icon" aria-hidden="true"></i>
+          <h2 id="multi-title" class="jp-slider-section-title">Multiplayer Games</h2>
+        </div>
+        <div class="jp-slider-container" data-slider>
+          <button class="jp-slider-btn jp-slider-prev" type="button" aria-label="Previous games"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+          <div class="jp-slider-viewport">
+            <div class="jp-slider-track">
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--multi"><i class="bi bi-grid-3x3" aria-hidden="true"></i></div>
+                <span class="game-card__title">Battle Grid X</span>
+                <span class="game-card__tag">Multiplayer</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--multi"><i class="bi bi-x-lg" aria-hidden="true"></i></div>
+                <span class="game-card__title">Team Tic-Tac</span>
+                <span class="game-card__tag">Multiplayer</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--multi"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></div>
+                <span class="game-card__title">Retro Runner Duel</span>
+                <span class="game-card__tag">Multiplayer</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--multi"><i class="bi bi-palette" aria-hidden="true"></i></div>
+                <span class="game-card__title">Color Match Party</span>
+                <span class="game-card__tag">Multiplayer</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--multi"><i class="bi bi-puzzle" aria-hidden="true"></i></div>
+                <span class="game-card__title">Puzzle Blast Online</span>
+                <span class="game-card__tag">Multiplayer</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--multi"><i class="bi bi-lightning" aria-hidden="true"></i></div>
+                <span class="game-card__title">Reflex Arena</span>
+                <span class="game-card__tag">Multiplayer</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+            </div>
+          </div>
+          <button class="jp-slider-btn jp-slider-next" type="button" aria-label="Next games"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekly challenges banner (no CTA) -->
+    <section class="jp-winbig-section" aria-label="Weekly challenges">
+      <div class="container">
+        <div class="jp-winbig-banner jp-winbig-banner--static">
+          <div class="jp-winbig-content">
+            <div class="jp-winbig-amount">
+              <div class="jp-winbig-amount-line1">Free Weekly</div>
+              <div class="jp-winbig-amount-line2">Challenges</div>
+              <div class="jp-winbig-amount-line3">&amp; Events</div>
+            </div>
+            <p class="jp-winbig-subtitle">In-game badges only — no cash prizes</p>
+            <a class="jp-btn btn-cta-purple mt-3" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">Get App Link</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arcade Games -->
+    <section class="jp-slider-section" id="arcade-games" aria-labelledby="arcade-title">
+      <div class="container">
+        <div class="jp-slider-section-title-row">
+          <i class="bi bi-joystick section-icon" aria-hidden="true"></i>
+          <h2 id="arcade-title" class="jp-slider-section-title">Arcade Games</h2>
+        </div>
+        <div class="jp-slider-container" data-slider>
+          <button class="jp-slider-btn jp-slider-prev" type="button" aria-label="Previous games"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+          <div class="jp-slider-viewport">
+            <div class="jp-slider-track">
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--arcade"><i class="bi bi-controller" aria-hidden="true"></i></div>
+                <span class="game-card__title">Retro Runner</span>
+                <span class="game-card__tag">Arcade</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--arcade"><i class="bi bi-crosshair" aria-hidden="true"></i></div>
+                <span class="game-card__title">Pixel Shooter</span>
+                <span class="game-card__tag">Arcade</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--arcade"><i class="bi bi-grid" aria-hidden="true"></i></div>
+                <span class="game-card__title">Puzzle Blast</span>
+                <span class="game-card__tag">Arcade</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--arcade"><i class="bi bi-circle-fill" aria-hidden="true"></i></div>
+                <span class="game-card__title">Bubble Pop</span>
+                <span class="game-card__tag">Arcade</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--arcade"><i class="bi bi-music-note-beamed" aria-hidden="true"></i></div>
+                <span class="game-card__title">Rhythm Tap</span>
+                <span class="game-card__tag">Arcade</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+              <a class="game-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">
+                <div class="game-card__thumb game-card__thumb--arcade"><i class="bi bi-bezier2" aria-hidden="true"></i></div>
+                <span class="game-card__title">Neon Snake</span>
+                <span class="game-card__tag">Arcade</span>
+                <span class="game-card__play"><i class="bi bi-whatsapp" aria-hidden="true"></i> Get App Link</span></a>
+            </div>
+          </div>
+          <button class="jp-slider-btn jp-slider-next" type="button" aria-label="Next games"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="jp-reviews-section" aria-labelledby="reviews-title">
+      <div class="container">
+        <h2 id="reviews-title" class="section-title-gold text-center">
+          <span class="section-title-chip">Player Feedback</span>
+        </h2>
+        <p class="jp-reviews-note text-center">Sample player feedback about the gaming experience.</p>
+        <div class="reviews-grid">
+          <blockquote class="jp-review-card">
+            <div class="jp-review-stars" aria-label="5 stars">
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+            </div>
+            <p class="jp-review-body">Games bilkul smooth chalti hain! Browser preview se pehle try karke app download kiya — bahut fun hai!</p>
+            <footer class="jp-review-author">Rohit M.</footer>
+          </blockquote>
+          <blockquote class="jp-review-card">
+            <div class="jp-review-stars" aria-label="5 stars">
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+            </div>
+            <p class="jp-review-body">Multiplayer mode smooth hai aur arcade games ka collection kamal ka hai. Pure entertainment!</p>
+            <footer class="jp-review-author">Priya S.</footer>
+          </blockquote>
+          <blockquote class="jp-review-card">
+            <div class="jp-review-stars" aria-label="4 stars">
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+              <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
+              <i class="bi bi-star jp-review-star--empty" aria-hidden="true"></i>
+            </div>
+            <p class="jp-review-body">Daily rewards milte hain aur koi real money involved nahi — family ke saath khelne ke liye perfect.</p>
+            <footer class="jp-review-author">Amit K.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="jp-about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="section-title-gold text-center">
+          <span class="section-title-chip">About ON.GAME</span>
+        </h2>
+        <div class="jp-about-panel">
+          <p>ON.GAME is a free social gaming hub where you can preview and play casual arcade, sports and multiplayer games in your browser. Our full mobile app offers an expanded library — all for entertainment, never for real-money gambling.</p>
+          <p class="mb-0">Read our <a href="privacy-policy.html">Privacy Policy</a>, <a href="terms.html">Terms of Service</a>, or <a href="contact.html">Contact Us</a> for support.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="jp-footer">
+  <footer class="jp-footer" id="contact">
     <div class="container">
       <div class="footer-disclaimer" role="note">
         <i class="bi bi-shield-exclamation" aria-hidden="true"></i>
@@ -156,14 +426,14 @@
       <nav class="jp-footer-nav" aria-label="Footer navigation">
         <a href="index.html">Home</a>
         <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms.html" aria-current="page">Terms of Service</a>
+        <a href="terms.html">Terms of Service</a>
         <a href="contact.html">Contact Us</a>
       </nav>
 
       <div class="jp-footer-contact">
         <p><strong>ON.GAME</strong> — Free Social Gaming Hub</p>
         <p>Email: <a href="mailto:support@ongame.app">support@ongame.app</a></p>
-        <p>Support: <a href="contact.html">Contact page</a></p>
+        <p>WhatsApp: <a href="https://wa.me/917023454901?text=Hi%2C%20I%20need%20help%20with%20ON.GAME">+91 70234 54901</a></p>
       </div>
 
       <p class="jp-footer-legal-note">
@@ -175,36 +445,18 @@
         <div class="jp-footer-copy">2026&copy; ON.GAME</div>
         <div class="jp-footer-right">All Rights Reserved.</div>
       </div>
+
+      <div class="text-center mt-4">
+        <a class="jp-btn btn-cta-gold px-4 footer-sticky-btn" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME">Get App Link</a>
+      </div>
     </div>
   </footer>
 
-  <div class="og-modal" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="lead-modal-title" hidden>
-    <div class="og-modal__backdrop" data-close-modal></div>
-    <div class="og-modal__panel og-modal__panel--form">
-      <button type="button" class="og-modal__close" data-close-modal aria-label="Close dialog">
-        <i class="bi bi-x-lg" aria-hidden="true"></i>
-      </button>
-      <h2 id="lead-modal-title" class="og-modal__title">Get the ON.GAME App</h2>
-      <p class="og-modal__subtitle">Enter your mobile number to receive the app download link via WhatsApp.</p>
-      <form id="lead-form" class="lead-form" novalidate>
-        <label class="lead-form__label" for="lead-phone">Mobile Number (India)</label>
-        <div class="lead-form__phone-row">
-          <span class="lead-form__prefix" aria-hidden="true">+91</span>
-          <input type="tel" id="lead-phone" name="phone" class="lead-form__input" inputmode="numeric"
-            pattern="[0-9]{10}" maxlength="10" placeholder="10-digit number" required autocomplete="tel" />
-        </div>
-        <p class="lead-form__error" id="lead-error" role="alert" hidden></p>
-        <label class="lead-form__checkbox">
-          <input type="checkbox" id="lead-consent" name="consent" required />
-          <span>I agree to the <a href="terms.html" target="_blank" rel="noopener">Terms of Service</a> and
-            <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>. I understand this is a free
-            entertainment platform with no real-money gambling.</span>
-        </label>
-        <button type="submit" class="jp-btn btn-cta-gold lead-form__submit">Send App Link</button>
-      </form>
-      <p class="lead-form__note">We only use your number to send the app link. No spam, no charges.</p>
-    </div>
-  </div>
+  <a class="jp-whatsapp-float" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" target="_blank"
+    rel="noopener noreferrer" aria-label="Get ON.GAME app link on WhatsApp">
+    <i class="bi bi-whatsapp jp-whatsapp-float-icon" aria-hidden="true"></i>
+    <span class="jp-whatsapp-float-label">Get App</span>
+  </a>
 
   <script src="script.js" defer></script>
 </body>
