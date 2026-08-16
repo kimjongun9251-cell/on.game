@@ -5,697 +5,208 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="ON.GAME offers free social arcade, sports and multiplayer games for entertainment. No real money gambling. Download via WhatsApp support." />
+    content="Terms of Service for ON.GAME — free social gaming hub for entertainment only." />
   <meta name="robots" content="index, follow" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="ON.GAME — Free Social Games" />
-  <meta property="og:description"
-    content="Play free social games online. Entertainment only — no real money betting or gambling." />
+  <meta property="og:title" content="Terms of Service — ON.GAME" />
   <meta property="og:site_name" content="ON.GAME" />
   <meta name="theme-color" content="#070b14" />
-  <title>ON.GAME — Free Social Games Online</title>
+  <title>Terms of Service — ON.GAME</title>
+
+  <link rel="icon" href="assets/favicon/favicon.png" />
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="assets/favicon/favicon.png">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Meta Pixel — replace YOUR_PIXEL_ID -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" alt="" />
+  </noscript>
+
+  <!-- Google Analytics 4 — replace G-XXXXXXXXXX -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 
 <body class="page-glow">
-  <!-- <div class="jp-meta-disclaimer" role="note">
-    <strong>Entertainment only.</strong> ON.GAME is a free social gaming platform. No real-money gambling, betting, or cash withdrawals.
-  </div> -->
-  <!-- Section 1: Header + Hero -->
-  <header>
-    <nav class="navbar navbar-expand-lg jp-navbar fixed-top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar jp-navbar fixed-top" aria-label="Primary navigation">
       <div class="jp-navbar-inner container">
-        <a class="navbar-brand navbar-brand-logo d-flex align-items-center py-0 m-0" href="index.html">
-          <span class="d-block">
-            <img class="brand-logo-img d-block" src="assets/logo.png" alt="ON.GAME" width="297" height="40"
-              decoding="async" />
-          </span>
+        <a class="navbar-brand navbar-brand-logo" href="index.html" aria-label="ON.GAME Home">
+          <img class="brand-logo-img" src="assets/logo.png" alt="ON.GAME" width="297" height="40" decoding="async" />
         </a>
-        <a class="jp-btn btn-cta-gold" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="button">Get App</a>
+        <button type="button" class="jp-btn btn-cta-gold js-lead-cta" data-cta-location="header">
+          Get App Link
+        </button>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero-section">
-      <div class="container">
-        <div class="jp-hero-inner">
-          <div class="hero-banner-wrap">
-            <div class="hero-banner-media">
-              <picture>
-                <source media="(max-width: 768px)" srcset="assets/mobile/hero-banner.png" />
-                <img class="hero-bg-img" src="assets/herobanner.jpg" alt="" width="1920" height="1080"
-                  decoding="async" fetchpriority="high" />
-              </picture>
-            </div>
-            <div class="hero-bg-overlay" aria-hidden="true"></div>
-            <div class="hero-content">
-              <div class="row w-100 g-0 align-items-end mx-0">
-                <div class="hero-copy col-lg-6 px-0">
-                  <h1 class="hero-title mb-3">FREE SOCIAL<br>GAMES ONLINE</h1>
-                  <p class="hero-subtitle mb-4">
-                    <span class="d-block">Arcade, sports & multiplayer</span>
-                    <span class="d-block">Free to play • No deposit required</span>
-                  </p>
-                  <a class="jp-btn btn-cta-purple" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="button">Get App Link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <main id="main-content" class="jp-legal-page">
+    <div class="container">
+      <div class="hero-disclaimer" role="note">
+        <i class="bi bi-shield-check" aria-hidden="true"></i>
+        <p>
+          <strong>100% Free Social Gaming Platform.</strong>
+          No real money deposit, betting, or cash prizes involved.
+          For entertainment purposes only (18+).
+        </p>
       </div>
-    </section>
 
-    <!-- Section 2: How to start -->
-    <section class="how-to-claim-section">
-      <div class="container">
-        <div class="text-center mb-4">
-          <h2 class="section-title-gold d-inline-block">
-            <span class="section-title-chip">How to start playing</span>
-          </h2>
-        </div>
-        <div class="howto-panel">
-          <div class="row g-4 align-items-center">
-            <div class="col-lg">
-              <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-4 px-3">
-                  <div class="howto-step h-100">
-                    <div class="howto-icon howto-icon--wiggle">
-                      <img class="howto-icon-img" src="assets/join-icon.png" alt="" aria-hidden="true" loading="lazy" />
-                    </div>
-                    <div class="howto-step-text">
-                      <h3 class="howto-step-title">Join</h3>
-                      <p class="howto-step-desc mb-0">Tap Get App and create your free social gaming profile in seconds</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 px-3">
-                  <div class="howto-step h-100">
-                    <div class="howto-icon">
-                      <img class="howto-icon-img" src="assets/diposit-icon.png" alt="" aria-hidden="true" loading="lazy" />
-                    </div>
-                    <div class="howto-step-text">
-                      <h3 class="howto-step-title">Play</h3>
-                      <p class="howto-step-desc mb-0">Choose your favourite game and jump into the action instantly</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 px-3">
-                  <div class="howto-step h-100">
-                    <div class="howto-icon">
-                      <img class="howto-icon-img" src="assets/claim.png" alt="" aria-hidden="true" loading="lazy" />
-                    </div>
-                    <div class="howto-step-text">
-                      <h3 class="howto-step-title">Level Up</h3>
-                      <p class="howto-step-desc mb-0">Earn in-game points, unlock levels and collect daily login rewards</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-auto text-center text-lg-end">
-              <a class="jp-btn btn-cta-gold px-4" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="button">Get App Link</a>
-            </div>
-          </div>
-        </div>
+      <h1 class="jp-legal-title">Terms of Service</h1>
+      <p class="jp-legal-updated">Last updated: August 16, 2026</p>
 
-        <div class="jp-trust-badges mt-5" aria-label="Platform highlights">
-          <div class="jp-trust-badge">
-            <i class="bi bi-controller" aria-hidden="true"></i>
-            <span>Free to Play</span>
-          </div>
-          <div class="jp-trust-badge">
-            <i class="bi bi-shield-check" aria-hidden="true"></i>
-            <span>No Real Money</span>
-          </div>
-          <div class="jp-trust-badge">
-            <i class="bi bi-people" aria-hidden="true"></i>
-            <span>Social Gaming</span>
-          </div>
-          <div class="jp-trust-badge">
-            <i class="bi bi-headset" aria-hidden="true"></i>
-            <span>WhatsApp Support</span>
-          </div>
-        </div>
+      <div class="jp-legal-content">
+        <p>Welcome to ON.GAME. By accessing or using our website, browser game previews, or mobile app services, you agree to these Terms of Service ("Terms"). Please read them carefully.</p>
+
+        <h2>1. About ON.GAME</h2>
+        <p>ON.GAME is a <strong>free social gaming hub</strong> offering arcade, sports-themed, and multiplayer games for casual entertainment. ON.GAME is <strong>not</strong> a real-money gambling, sports betting, casino, or lottery service.</p>
+
+        <h2>2. No Real-Money Gambling</h2>
+        <p>You acknowledge and agree that:</p>
+        <ul>
+          <li>ON.GAME does not accept deposits, wagers, or bets involving real money</li>
+          <li>Virtual coins, points, badges, and in-game rewards have <strong>no cash value</strong> and cannot be exchanged for money or prizes</li>
+          <li>There are no cash withdrawals, UPI payouts, or financial winnings on this platform</li>
+          <li>Browser game previews and all gameplay are provided for entertainment purposes only</li>
+        </ul>
+
+        <h2>3. Eligibility</h2>
+        <p>You must be at least 18 years old and legally permitted to use online gaming services in your jurisdiction. By using ON.GAME, you represent that you meet applicable age and legal requirements. We may restrict access where required by law.</p>
+
+        <h2>4. App Download Requests</h2>
+        <p>When you submit your mobile number through our app request form, you consent to receive the download link via WhatsApp. Messaging is voluntary. Standard carrier data charges may apply. We use your number only to fulfill your request.</p>
+
+        <h2>5. Browser Game Previews</h2>
+        <p>Free demo games on this website are simplified previews for entertainment. They do not represent real-money outcomes, odds, or payouts. Full game libraries are available in the mobile app only.</p>
+
+        <h2>6. Acceptable Use</h2>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Use the platform for unlawful, fraudulent, or abusive purposes</li>
+          <li>Attempt to hack, reverse engineer, or disrupt our services</li>
+          <li>Misrepresent ON.GAME as a betting or real-money gambling service</li>
+          <li>Use bots, cheats, or exploits that harm other players or the platform</li>
+        </ul>
+
+        <h2>7. Intellectual Property</h2>
+        <p>All content on this website — including logos, text, graphics, and game artwork — is owned by ON.GAME or its licensors and protected by applicable intellectual property laws.</p>
+
+        <h2>8. Disclaimers</h2>
+        <p>ON.GAME is provided on an "as is" and "as available" basis. We do not guarantee uninterrupted access, error-free operation, or specific game outcomes. To the fullest extent permitted by law, we disclaim all warranties, express or implied.</p>
+
+        <h2>9. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, ON.GAME and its operators shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the website or games.</p>
+
+        <h2>10. Third-Party Links</h2>
+        <p>Our website may integrate with third-party services such as WhatsApp, Meta Pixel, and Google Analytics. We are not responsible for third-party policies or practices.</p>
+
+        <h2>11. Changes to Terms</h2>
+        <p>We may update these Terms at any time. Updated Terms will be posted on this page with a revised date.</p>
+
+        <h2>12. Governing Law</h2>
+        <p>These Terms are governed by the laws of India. Disputes shall be subject to the exclusive jurisdiction of courts in India, unless otherwise required by applicable law.</p>
+
+        <h2>13. Contact</h2>
+        <p>For questions about these Terms:</p>
+        <ul>
+          <li>Email: <a href="mailto:support@ongame.app">support@ongame.app</a></li>
+          <li>Contact page: <a href="contact.html">contact.html</a></li>
+        </ul>
       </div>
-    </section>
-
-    <!-- Section 3: Why ON.GAME? -->
-    <section class="why-main-section">
-      <div class="container">
-        <h2 class="section-title-gold text-center">
-          <span class="section-title-chip">Why ON.GAME?</span>
-        </h2>
-        <div class="row g-3 g-lg-4 mt-3">
-          <div class="col-6 col-lg-3">
-            <div class="why-card h-100 text-center">
-              <div class="why-card-icon">
-                <img class="why-card-icon-img" src="assets/why-jp-icons/user-icon.png" alt="" aria-hidden="true" loading="lazy" />
-              </div>
-              <p class="why-card-label mb-0">Easy Registration</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div class="why-card h-100 text-center">
-              <div class="why-card-icon">
-                <img class="why-card-icon-img" src="assets/why-jp-icons/atm-icon.png" alt="" aria-hidden="true" loading="lazy" />
-              </div>
-              <p class="why-card-label mb-0">Smooth Gameplay</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div class="why-card h-100 text-center">
-              <div class="why-card-icon">
-                <img class="why-card-icon-img" src="assets/why-jp-icons/gift-icon.png" alt="" aria-hidden="true" loading="lazy" />
-              </div>
-              <p class="why-card-label mb-0">Daily Rewards</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div class="why-card h-100 text-center">
-              <div class="why-card-icon">
-                <img class="why-card-icon-img" src="assets/why-jp-icons/vip-icon.png" alt="" aria-hidden="true" loading="lazy" />
-              </div>
-              <p class="why-card-label mb-0">VIP Gamer Club</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 4: Sports Games slider -->
-    <section class="jp-slider-section">
-      <div class="container">
-        <div class="jp-slider-section-title-row mb-4">
-          <span class="brand-clover jp-slider-section-clover" aria-hidden="true">
-            <img class="jp-slider-section-icon-img" src="assets/sports-icon.png" alt="" decoding="async" />
-          </span>
-          <h2 class="jp-slider-section-title mb-0">Sports Games</h2>
-        </div>
-
-        <div class="jp-slider-container">
-          <button class="jp-slider-btn jp-slider-prev" type="button" aria-label="Previous">
-            <i class="bi bi-chevron-left" aria-hidden="true"></i>
-          </button>
-
-          <div class="jp-slider-viewport">
-            <div class="jp-slider-track">
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/sports/bbl.png" alt="Cricket Smash" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Cricket Smash</div>
-                  <div class="jp-slider-card-provider">Sports</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/sports/cpl.png" alt="Premier Clash" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Premier Clash</div>
-                  <div class="jp-slider-card-provider">Sports</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/sports/ipl.png" alt="Super League Cricket" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Super League Cricket</div>
-                  <div class="jp-slider-card-provider">Sports</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/sports/psl.png" alt="Street Cricket Pro" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Street Cricket Pro</div>
-                  <div class="jp-slider-card-provider">Sports</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/sports/sa20cl.png" alt="T20 Arena" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">T20 Arena</div>
-                  <div class="jp-slider-card-provider">Sports</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/sports/thc.png" alt="Hundred Heroes" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Hundred Heroes</div>
-                  <div class="jp-slider-card-provider">Sports</div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <button class="jp-slider-btn jp-slider-next" type="button" aria-label="Next">
-            <i class="bi bi-chevron-right" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 5: Multiplayer Games slider -->
-    <section class="jp-slider-section p-0">
-      <div class="container">
-        <div class="jp-slider-section-title-row mb-4">
-          <span class="brand-clover jp-slider-section-clover" aria-hidden="true">
-            <img class="jp-slider-section-icon-img" src="assets/livecasinos.png" alt="Multiplayer games" />
-          </span>
-          <h2 class="jp-slider-section-title mb-0">Multiplayer Games</h2>
-        </div>
-
-        <div class="jp-slider-container">
-          <button class="jp-slider-btn jp-slider-prev" type="button" aria-label="Previous">
-            <i class="bi bi-chevron-left" aria-hidden="true"></i>
-          </button>
-
-          <div class="jp-slider-viewport">
-            <div class="jp-slider-track">
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/casino/crazytime.png" alt="Crazy Rush" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Crazy Rush</div>
-                  <div class="jp-slider-card-provider">Multiplayer</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/casino/crazypachinko.png" alt="Pinball Party" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Pinball Party</div>
-                  <div class="jp-slider-card-provider">Multiplayer</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/casino/teenpatti.png" alt="Card Master" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Card Master</div>
-                  <div class="jp-slider-card-provider">Multiplayer</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/casino/superandarbahar.png" alt="Color Clash" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Color Clash</div>
-                  <div class="jp-slider-card-provider">Multiplayer</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/casino/blackjack.png" alt="21 Challenge" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">21 Challenge</div>
-                  <div class="jp-slider-card-provider">Multiplayer</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/casino/roulette.png" alt="Spin Quest" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Spin Quest</div>
-                  <div class="jp-slider-card-provider">Multiplayer</div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <button class="jp-slider-btn jp-slider-next" type="button" aria-label="Next">
-            <i class="bi bi-chevron-right" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 6: Tournament Rewards banner -->
-    <section class="jp-winbig-section">
-      <div class="container">
-        <div class="jp-winbig-banner">
-          <img class="jp-winbig-bg-img" src="assets/win-big-banner.jpg" alt="" width="1920" height="500" decoding="async" />
-          <picture>
-            <source media="(max-width: 768px)" srcset="assets/mobile/win_big.png" />
-            <img class="jp-winbig-art-img" src="assets/cashbackfifa.png" alt="Weekly gaming challenges" decoding="async" />
-          </picture>
-
-          <div class="jp-winbig-content">
-            <div class="jp-winbig-amount">
-              <div class="jp-winbig-amount-line1">Free Weekly</div>
-              <div class="jp-winbig-amount-line2">Challenges</div>
-              <div class="jp-winbig-amount-line3">& Events</div>
-            </div>
-            <div class="jp-winbig-subtitle">In-game rewards only — no cash prizes</div>
-            <a class="jp-btn btn-cta-purple jp-winbig-cta jp-winbig-cta-mobile" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="button">Get App Link</a>
-          </div>
-        </div>
-        <a class="jp-btn btn-cta-purple jp-winbig-cta jp-winbig-cta-desktop" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="button">Get App Link</a>
-      </div>
-    </section>
-
-    <!-- Section 7: Arcade Games slider -->
-    <section class="jp-slider-section p-0">
-      <div class="container">
-        <div class="jp-slider-section-title-row mb-4">
-          <span class="brand-clover jp-slider-section-clover" aria-hidden="true">
-            <img class="jp-slider-section-icon-img" src="assets/slots-icon.png" alt="" decoding="async" />
-          </span>
-          <h2 class="jp-slider-section-title mb-0">Arcade Games</h2>
-        </div>
-
-        <div class="jp-slider-container">
-          <button class="jp-slider-btn jp-slider-prev" type="button" aria-label="Previous">
-            <i class="bi bi-chevron-left" aria-hidden="true"></i>
-          </button>
-
-          <div class="jp-slider-viewport">
-            <div class="jp-slider-track">
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/slots/xmas.png" alt="Xmas Dash" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Xmas Dash</div>
-                  <div class="jp-slider-card-provider">Arcade</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/slots/chicken.png" alt="Chicken Run" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Chicken Run</div>
-                  <div class="jp-slider-card-provider">Arcade</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/slots/lebandit.png" alt="Bandit Quest" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Bandit Quest</div>
-                  <div class="jp-slider-card-provider">Arcade</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/slots/ganesha.png" alt="Ganesha Quest" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Ganesha Quest</div>
-                  <div class="jp-slider-card-provider">Arcade</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/slots/jetx.png" alt="Jet Rush" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Jet Rush</div>
-                  <div class="jp-slider-card-provider">Arcade</div>
-                </div>
-              </a>
-              <a class="jp-slider-card" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="group">
-                <div class="jp-slider-card-media">
-                  <div class="jp-slider-card-media-overlay"></div>
-                  <img class="jp-slider-card-img" src="assets/slots/millonaire.png" alt="Mega Fortune" loading="lazy" />
-                </div>
-                <div class="jp-slider-card-body">
-                  <div class="jp-slider-card-title">Mega Fortune</div>
-                  <div class="jp-slider-card-provider">Arcade</div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <button class="jp-slider-btn jp-slider-next" type="button" aria-label="Next">
-            <i class="bi bi-chevron-right" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 9: Reviews -->
-    <section class="jp-reviews-section">
-      <div class="container">
-        <div class="jp-reviews-carousel" aria-label="Player feedback">
-          <p class="jp-reviews-note text-center small mb-3">Sample player feedback about the gaming experience.</p>
-          <div class="jp-reviews-viewport">
-            <div class="jp-reviews-track">
-              <div class="jp-review-card">
-                <div class="jp-review-stars">
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                </div>
-                <div class="jp-review-title">Smooth gameplay</div>
-                <div class="jp-review-body">Games bilkul smooth chalti hain! Graphics amazing hain aur levels unlock karna bahut fun hai. Highly recommend karta hoon!</div>
-                <div class="jp-review-author">Rohit M.</div>
-              </div>
-              <div class="jp-review-card">
-                <div class="jp-review-stars">
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                </div>
-                <div class="jp-review-title">Best gaming app</div>
-                <div class="jp-review-body">Best gaming app I've tried. Multiplayer mode smooth hai aur support team ne turant help ki. Leaderboard climb karna addictive hai!</div>
-                <div class="jp-review-author">Priya S.</div>
-              </div>
-              <div class="jp-review-card">
-                <div class="jp-review-stars">
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star jp-review-star--empty" aria-hidden="true"></i>
-                </div>
-                <div class="jp-review-title">Great experience</div>
-                <div class="jp-review-body">2 mahine se khel raha hoon. Daily rewards milte hain aur arcade games ka collection kamal ka hai. Tournament section mera favourite hai!</div>
-                <div class="jp-review-author">Amit K.</div>
-              </div>
-              <div class="jp-review-card">
-                <div class="jp-review-stars">
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                </div>
-                <div class="jp-review-title">Highly recommended</div>
-                <div class="jp-review-body">Friends ke saath multiplayer khelna best part hai. Sports games aur arcade dono ek hi app mein. Free coins roz milte hain!</div>
-                <div class="jp-review-author">Sneha R.</div>
-              </div>
-              <div class="jp-review-card">
-                <div class="jp-review-stars">
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star jp-review-star--empty" aria-hidden="true"></i>
-                </div>
-                <div class="jp-review-title">Amazing platform</div>
-                <div class="jp-review-body">Pure family ke liye perfect gaming app! Controls easy hain, lag nahi aata, aur naye games regularly add hote hain. Maza aa gaya!</div>
-                <div class="jp-review-author">Vikram P.</div>
-              </div>
-              <div class="jp-review-card">
-                <div class="jp-review-stars">
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                </div>
-                <div class="jp-review-title">Smooth gameplay</div>
-                <div class="jp-review-body">Games bilkul smooth chalti hain! Graphics amazing hain aur levels unlock karna bahut fun hai. Highly recommend karta hoon!</div>
-                <div class="jp-review-author">Rohit M.</div>
-              </div>
-              <div class="jp-review-card">
-                <div class="jp-review-stars">
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                </div>
-                <div class="jp-review-title">Best gaming app</div>
-                <div class="jp-review-body">Best gaming app I've tried. Multiplayer mode smooth hai aur support team ne turant help ki. Leaderboard climb karna addictive hai!</div>
-                <div class="jp-review-author">Priya S.</div>
-              </div>
-              <div class="jp-review-card">
-                <div class="jp-review-stars">
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star jp-review-star--empty" aria-hidden="true"></i>
-                </div>
-                <div class="jp-review-title">Great experience</div>
-                <div class="jp-review-body">2 mahine se khel raha hoon. Daily rewards milte hain aur arcade games ka collection kamal ka hai. Tournament section mera favourite hai!</div>
-                <div class="jp-review-author">Amit K.</div>
-              </div>
-              <div class="jp-review-card">
-                <div class="jp-review-stars">
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                </div>
-                <div class="jp-review-title">Highly recommended</div>
-                <div class="jp-review-body">Friends ke saath multiplayer khelna best part hai. Sports games aur arcade dono ek hi app mein. Free coins roz milte hain!</div>
-                <div class="jp-review-author">Sneha R.</div>
-              </div>
-              <div class="jp-review-card">
-                <div class="jp-review-stars">
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill jp-review-star--filled" aria-hidden="true"></i>
-                  <i class="bi bi-star jp-review-star--empty" aria-hidden="true"></i>
-                </div>
-                <div class="jp-review-title">Amazing platform</div>
-                <div class="jp-review-body">Pure family ke liye perfect gaming app! Controls easy hain, lag nahi aata, aur naye games regularly add hote hain. Maza aa gaya!</div>
-                <div class="jp-review-author">Vikram P.</div>
-              </div>
-            </div>
-          </div>
-          <div class="jp-reviews-dots" aria-hidden="true">
-            <span class="jp-review-dot is-active"></span>
-            <span class="jp-review-dot"></span>
-            <span class="jp-review-dot"></span>
-            <span class="jp-review-dot"></span>
-            <span class="jp-review-dot"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 10: Ready to Play -->
-    <section class="jp-readywin-section">
-      <div class="container">
-        <div class="jp-readywin-banner">
-          <div class="jp-readywin-bg-wrapper">
-            <img class="jp-readywin-bg-img" src="assets/ready-to-win-banner.jpg" alt="" width="1920" height="340" decoding="async" />
-          </div>
-          <picture>
-            <source media="(max-width: 768px)" srcset="assets/mobile/ready_win.png" />
-            <img class="jp-readywin-art-img" src="assets/ready-to-win.png" alt="" decoding="async" />
-          </picture>
-
-          <div class="jp-readywin-content">
-            <div class="jp-readywin-title">Ready to Play?</div>
-            <div class="jp-readywin-subtitle">Start your gaming journey!</div>
-            <a class="jp-btn btn-cta-gold jp-readywin-cta" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="button">Get App Link</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="jp-about-section" id="about">
-      <div class="container">
-        <h2 class="section-title-gold text-center">
-          <span class="section-title-chip">About ON.GAME</span>
-        </h2>
-        <div class="jp-about-panel">
-          <p>ON.GAME is a free social gaming platform where you can enjoy arcade, sports and multiplayer games with friends. Our app is built for casual entertainment — not for real-money gambling or betting.</p>
-          <p class="mb-0">Download the app through our official WhatsApp support channel. Need help? Visit our <a href="contact.html">Contact page</a> or read our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="jp-footer" id="contact">
-      <div class="container">
-        <div class="jp-footer-brand">
-          <span class="d-block">
-            <img class="footer-brand-logo-img d-block" src="assets/logo.png" alt="ON.GAME" width="297" height="40" decoding="async" />
-          </span>
-        </div>
-
-        <nav class="jp-footer-nav" aria-label="Footer navigation">
-          <a href="index.html">Home</a>
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
-          <a href="contact.html">Contact Us</a>
-        </nav>
-
-        <div class="jp-footer-contact">
-          <p class="mb-1"><strong>ON.GAME</strong> — Free Social Gaming Platform</p>
-          <p class="mb-1">Email: <a href="mailto:support@ongame.app">support@ongame.app</a></p>
-          <p class="mb-0">WhatsApp: <a href="https://wa.me/917023454901?text=Hi%2C%20I%20need%20help%20with%20ON.GAME">+91 70234 54901</a></p>
-        </div>
-
-        <div class="jp-footer-mid">
-          <div class="jp-footer-trust-badge" aria-label="Free to play">
-            <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
-            <span>Free Social Games</span>
-          </div>
-        </div>
-
-        <p class="jp-footer-legal-note">ON.GAME does not offer real-money gambling, sports betting, casino wagering, or cash withdrawals. All games are for entertainment only. Virtual coins and in-game rewards have no real-world cash value.</p>
-
-        <div class="jp-footer-divider" aria-hidden="true"></div>
-
-        <div class="jp-footer-bottom">
-          <div class="jp-footer-copy">2026© ON.GAME</div>
-          <div class="jp-footer-right">All Rights Reserved.</div>
-        </div>
-
-        <div class="col-lg-auto text-center text-lg-end my-new-class">
-          <a class="jp-btn btn-cta-gold px-4 footer-sticky-btn" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" role="button">Get App Link</a>
-        </div>
-      </div>
-    </footer>
+    </div>
   </main>
 
-  <a class="jp-whatsapp-float" href="https://wa.me/917023454901?text=Hi%2C%20I%20want%20to%20download%20ON.GAME" target="_blank"
-    rel="noopener noreferrer" aria-label="Get ON.GAME app link on WhatsApp">
-    <i class="bi bi-whatsapp jp-whatsapp-float-icon" aria-hidden="true"></i>
-    <span class="jp-whatsapp-float-label">Get App</span>
-  </a>
+  <footer class="jp-footer">
+    <div class="container">
+      <div class="footer-disclaimer" role="note">
+        <i class="bi bi-shield-exclamation" aria-hidden="true"></i>
+        <p>
+          <strong>100% Free Social Gaming Platform.</strong>
+          No real money deposit, betting, or cash prizes involved.
+          For entertainment purposes only (18+).
+        </p>
+      </div>
+
+      <div class="jp-footer-brand">
+        <img class="footer-brand-logo-img" src="assets/logo.png" alt="ON.GAME" width="297" height="40" decoding="async" />
+      </div>
+
+      <nav class="jp-footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html" aria-current="page">Terms of Service</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="jp-footer-contact">
+        <p><strong>ON.GAME</strong> — Free Social Gaming Hub</p>
+        <p>Email: <a href="mailto:support@ongame.app">support@ongame.app</a></p>
+        <p>Support: <a href="contact.html">Contact page</a></p>
+      </div>
+
+      <p class="jp-footer-legal-note">
+        ON.GAME does not offer real-money gambling, sports betting, casino wagering, or cash withdrawals.
+        Virtual coins and in-game badges have no real-world cash value. All content is for entertainment only.
+      </p>
+
+      <div class="jp-footer-bottom">
+        <div class="jp-footer-copy">2026&copy; ON.GAME</div>
+        <div class="jp-footer-right">All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="og-modal" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="lead-modal-title" hidden>
+    <div class="og-modal__backdrop" data-close-modal></div>
+    <div class="og-modal__panel og-modal__panel--form">
+      <button type="button" class="og-modal__close" data-close-modal aria-label="Close dialog">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+      <h2 id="lead-modal-title" class="og-modal__title">Get the ON.GAME App</h2>
+      <p class="og-modal__subtitle">Enter your mobile number to receive the app download link via WhatsApp.</p>
+      <form id="lead-form" class="lead-form" novalidate>
+        <label class="lead-form__label" for="lead-phone">Mobile Number (India)</label>
+        <div class="lead-form__phone-row">
+          <span class="lead-form__prefix" aria-hidden="true">+91</span>
+          <input type="tel" id="lead-phone" name="phone" class="lead-form__input" inputmode="numeric"
+            pattern="[0-9]{10}" maxlength="10" placeholder="10-digit number" required autocomplete="tel" />
+        </div>
+        <p class="lead-form__error" id="lead-error" role="alert" hidden></p>
+        <label class="lead-form__checkbox">
+          <input type="checkbox" id="lead-consent" name="consent" required />
+          <span>I agree to the <a href="terms.html" target="_blank" rel="noopener">Terms of Service</a> and
+            <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>. I understand this is a free
+            entertainment platform with no real-money gambling.</span>
+        </label>
+        <button type="submit" class="jp-btn btn-cta-gold lead-form__submit">Send App Link</button>
+      </form>
+      <p class="lead-form__note">We only use your number to send the app link. No spam, no charges.</p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
 </body>
 
 </html>
- 
