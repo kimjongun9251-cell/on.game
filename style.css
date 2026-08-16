@@ -1,0 +1,683 @@
+/* Base theme from existing build */
+@import url("css/styles.css");
+
+/* ─── Accessibility ─── */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 2000;
+  padding: 0.5rem 1rem;
+  background: var(--jp-cyan);
+  color: #0f172a;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ─── Hero disclaimer ─── */
+.hero-disclaimer,
+.footer-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  background: rgba(34, 211, 238, 0.08);
+  border: 1px solid var(--jp-border-strong);
+  border-radius: 14px;
+  color: var(--jp-text);
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+.hero-disclaimer i,
+.footer-disclaimer i {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  color: var(--jp-cyan);
+  margin-top: 0.1rem;
+}
+
+.hero-disclaimer p,
+.footer-disclaimer p {
+  margin: 0;
+  font-size: inherit;
+}
+
+.footer-disclaimer {
+  margin-bottom: 2rem;
+  background: rgba(249, 115, 22, 0.08);
+  border-color: rgba(249, 115, 22, 0.35);
+}
+
+.footer-disclaimer i {
+  color: var(--jp-orange);
+}
+
+/* ─── Header offset (no top disclaimer bar) ─── */
+.jp-navbar.fixed-top {
+  top: 0;
+}
+
+.hero-section {
+  margin-top: 100px;
+}
+
+.hero-copy {
+  max-width: 520px;
+}
+
+/* ─── How-to steps (semantic list) ─── */
+.howto-steps {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.howto-step {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.25rem;
+  background: var(--jp-card);
+  border: 1px solid var(--jp-border);
+  border-radius: 16px;
+}
+
+.howto-step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--jp-gradient-cyan);
+  color: #0f172a;
+  font-weight: 800;
+  font-size: 0.9375rem;
+}
+
+.howto-step-title {
+  color: var(--white);
+  font-size: 1rem;
+  margin: 0 0 0.35rem;
+}
+
+.howto-step-desc {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* ─── Why grid ─── */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.why-card {
+  padding: 1.5rem 1rem;
+  background: var(--jp-card);
+  border: 1px solid var(--jp-border);
+  border-radius: 16px;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.why-card:hover {
+  border-color: var(--jp-border-strong);
+  transform: translateY(-3px);
+}
+
+.why-card-icon {
+  display: block;
+  font-size: 2rem;
+  color: var(--jp-cyan);
+  margin-bottom: 0.75rem;
+}
+
+/* ─── Section icons ─── */
+.section-icon {
+  font-size: 1.5rem;
+  color: var(--jp-cyan);
+}
+
+.jp-slider-section-title-row {
+  margin-bottom: 1.5rem;
+}
+
+/* ─── Game cards (replace old slider links) ─── */
+.game-card {
+  flex: 0 0 200px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+  border: 1px solid var(--jp-border);
+  border-radius: 16px;
+  background: var(--jp-card);
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.game-card:hover,
+.game-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--jp-border-strong);
+  box-shadow: var(--jp-glow-cyan);
+  outline: none;
+}
+
+.game-card__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.game-card__thumb--sports {
+  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+}
+
+.game-card__thumb--multi {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%);
+}
+
+.game-card__thumb--arcade {
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fbbf24 100%);
+}
+
+.game-card__title {
+  display: block;
+  padding: 0.75rem 0.875rem 0.25rem;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.3;
+}
+
+.game-card__tag {
+  display: block;
+  padding: 0 0.875rem;
+  color: var(--jp-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.game-card__play {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.625rem 0.875rem 0.875rem;
+  color: var(--jp-cyan);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+/* ─── Static win banner ─── */
+.jp-winbig-banner--static {
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.25) 0%, rgba(34, 211, 238, 0.12) 100%);
+  border: 1px solid var(--jp-border);
+  text-align: center;
+}
+
+.jp-winbig-banner--static .jp-winbig-content {
+  position: static;
+  transform: none;
+}
+
+/* ─── Reviews grid ─── */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.reviews-grid .jp-review-card {
+  margin: 0;
+}
+
+/* ─── Modals ─── */
+.og-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.og-modal[hidden] {
+  display: none;
+}
+
+.og-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 11, 20, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+.og-modal__panel {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem 1.75rem;
+  background: var(--jp-surface);
+  border: 1px solid var(--jp-border-strong);
+  border-radius: 20px;
+  box-shadow: var(--jp-shadow);
+}
+
+.og-modal__panel--game {
+  max-width: 520px;
+}
+
+.og-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.og-modal__close:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.og-modal__title {
+  color: var(--white);
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  padding-right: 2rem;
+}
+
+.og-modal__subtitle {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  margin: 0 0 1.25rem;
+  line-height: 1.5;
+}
+
+/* ─── Lead form ─── */
+.lead-form__label {
+  display: block;
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.lead-form__phone-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--jp-border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--jp-card);
+}
+
+.lead-form__prefix {
+  padding: 0 0.875rem;
+  color: var(--jp-muted);
+  font-weight: 600;
+  border-right: 1px solid var(--jp-border);
+  line-height: 48px;
+}
+
+.lead-form__input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--white);
+  padding: 0.875rem;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.lead-form__input::placeholder {
+  color: var(--jp-muted);
+}
+
+.lead-form__error {
+  color: #f87171;
+  font-size: 0.8125rem;
+  margin: 0 0 0.75rem;
+}
+
+.lead-form__checkbox {
+  display: flex;
+  gap: 0.625rem;
+  align-items: flex-start;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--text-color);
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+}
+
+.lead-form__checkbox input {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+  accent-color: var(--jp-cyan);
+}
+
+.lead-form__checkbox a {
+  color: var(--jp-cyan);
+}
+
+.lead-form__submit {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.lead-form__note {
+  margin: 1rem 0 0;
+  font-size: 0.75rem;
+  color: var(--jp-muted);
+  text-align: center;
+}
+
+.lead-form__success {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.lead-form__success i {
+  font-size: 3rem;
+  color: #25d366;
+  margin-bottom: 1rem;
+}
+
+/* ─── Game stage ─── */
+.game-stage {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--jp-card);
+  border: 1px solid var(--jp-border);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.game-stage__hint {
+  font-size: 0.8125rem;
+  color: var(--jp-muted);
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.game-stage__score {
+  color: var(--jp-cyan);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Tic-Tac-Toe */
+.ttt-board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 6px;
+}
+
+.ttt-cell {
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--jp-border-strong);
+  border-radius: 10px;
+  background: var(--jp-bg-soft);
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.ttt-cell:hover:not(:disabled) {
+  background: var(--jp-card-hover);
+}
+
+.ttt-status {
+  margin-top: 0.75rem;
+  color: var(--white);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.ttt-reset {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid var(--jp-border-strong);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--jp-cyan);
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 2048 */
+.p2048-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 64px);
+  gap: 6px;
+  touch-action: none;
+}
+
+.p2048-cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.p2048-cell[data-val="2"] { background: #334155; }
+.p2048-cell[data-val="4"] { background: #475569; }
+.p2048-cell[data-val="8"] { background: #6366f1; }
+.p2048-cell[data-val="16"] { background: #7c3aed; }
+.p2048-cell[data-val="32"] { background: #8b5cf6; }
+.p2048-cell[data-val="64"] { background: #a855f7; }
+.p2048-cell[data-val="128"],
+.p2048-cell[data-val="256"],
+.p2048-cell[data-val="512"] { background: #f97316; font-size: 0.875rem; }
+
+.p2048-hint {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--jp-muted);
+}
+
+/* Snake & Shooter canvas */
+.game-canvas {
+  display: block;
+  border-radius: 10px;
+  background: #0a0f1a;
+  max-width: 100%;
+}
+
+/* Reaction game */
+.reaction-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+
+.reaction-box--wait { background: #ef4444; color: #fff; }
+.reaction-box--ready { background: #22c55e; }
+.reaction-box--early { background: #f59e0b; color: #0f172a; }
+
+/* Color match */
+.colormatch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 72px);
+  gap: 8px;
+}
+
+.colormatch-btn {
+  width: 72px;
+  height: 72px;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.1s, border-color 0.1s;
+}
+
+.colormatch-btn:hover { transform: scale(1.05); }
+.colormatch-btn.is-target { border-color: #fff; box-shadow: 0 0 12px rgba(255,255,255,0.5); }
+
+/* CTA buttons as buttons */
+button.jp-btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Game cards as links */
+a.game-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* WhatsApp float visible */
+@media (max-width: 767.98px) {
+  .hero-section {
+    margin-top: 88px;
+  }
+
+  .hero-disclaimer,
+  .footer-disclaimer {
+    font-size: 0.8125rem;
+    padding: 0.875rem 1rem;
+  }
+
+  .game-card {
+    flex: 0 0 160px;
+    max-width: 160px;
+  }
+
+  .game-card__thumb {
+    height: 100px;
+    font-size: 2rem;
+  }
+
+  .og-modal__panel {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .ttt-board {
+    grid-template-columns: repeat(3, 68px);
+  }
+
+  .ttt-cell {
+    width: 68px;
+    height: 68px;
+    font-size: 1.75rem;
+  }
+
+  .p2048-grid {
+    grid-template-columns: repeat(4, 56px);
+  }
+
+  .p2048-cell {
+    width: 56px;
+    height: 56px;
+    font-size: 0.9375rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ─── Sub-pages (legal, contact) ─── */
+.jp-about-panel-title {
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.jp-footer-nav a[aria-current="page"] {
+  color: var(--jp-cyan);
+  font-weight: 600;
+}
+
+.jp-contact-card .jp-btn {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+}
+
+.jp-legal-page .hero-disclaimer {
+  margin-top: 0;
+}
